@@ -32,7 +32,27 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+.bg-image {
+  background-size: cover;
+  background-repeat: 'no-repeat';
+  background-position: 'center';
+  display: flex;
+  height: 'auto';
+  width:'auto';
+}
+
+@media (max-width: 640px) {
+  .bg-image {
+    background-size: 100% auto;
+    
+    image-orientation: from-image;
+    background-repeat: repeat;
+    position: absolute;
   }
 }
